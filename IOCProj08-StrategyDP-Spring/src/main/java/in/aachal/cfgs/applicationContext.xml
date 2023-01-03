@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- Dependent class-->
+ <bean id ="dtdc" class="in.aachal.beans.DTDC" /> 
+  <bean id ="dhl" class="in.aachal.beans.DHL" /> 
+ 
+ 
+
+ <!-- Target Spring bean Class-->
+ <bean id = "flip" class="in.aachal.beans.Flipkart"> 
+  
+  <property name="courier" ref="dhl"></property>
+ </bean>
+ 
+</beans>
