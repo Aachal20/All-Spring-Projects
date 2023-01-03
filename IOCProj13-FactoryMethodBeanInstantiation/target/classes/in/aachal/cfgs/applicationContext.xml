@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ 
+  <!-- static Factory method returing its own class objet -->
+ <bean id ="c1"  class="java.lang.Class" factory-method="forName">
+ <constructor-arg  value="java.util.Date"/>
+    </bean>       
+    
+      <!-- static Factory method returing its relenvant class objet --> 
+      <bean id = "cal" class="java.util.Calendar" factory-method="getInstance">
+      </bean>
+      
+      <!-- static Factory method returing its unrelenvant class objet --> 
+      <bean id = "props" class="java.lang.System" factory-method="getProperties">
+      </bean>
+      
+      <!-- Instance  Factory method returing its own class objet --> 
+      <bean id = "s1" class="java.lang.String" >
+      <constructor-arg value="hello"/> <!-- for constuction Injection -->
+      </bean>
+      
+      <bean id = "s2" factory-bean = "s1" factory-method="concat"> <!-- call s1.concat("123") method -->
+      <constructor-arg value= "123"/>
+      </bean>
+      
+      
+</beans>
+
+
+ 
+  
+ 
