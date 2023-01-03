@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <!-- First Use Case -->
+   <!--  <bean id = "p1" class="in.aachal.beans.Printer"/>   -->
+ 
+ 
+ 
+  <!-- second Use Case (Problem)--> 
+  <!--  <bean id  = "p1" class="in.aachal.beans.Printer"/> 
+  <bean id = "p2"  class="in.aachal.beans.Printer"/>   
+   -->
+  
+   <!-- third Use Case(Soluition) --> 
+  
+   <bean id = "p1" class="in.aachal.beans.Printer" factory-method="getInstance"/> 
+  <bean id = "p2" class="in.aachal.beans.Printer" factory-method="getInstance"/> 
+   
+           
+</beans>
