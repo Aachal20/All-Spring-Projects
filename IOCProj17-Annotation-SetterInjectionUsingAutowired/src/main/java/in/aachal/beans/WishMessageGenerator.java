@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class WishMessageGenerator {
 
 	//HAS-A (composition)
+	//@Autowired(required = false)
+	//@Autowired(required = true) //by default it is true
+	@Qualifier("dt1")              //Intially it give an error , add config tag
 	@Autowired
 	private Date date;
 

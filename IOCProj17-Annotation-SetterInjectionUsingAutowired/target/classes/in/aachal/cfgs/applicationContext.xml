@@ -5,11 +5,25 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+	<!-- First Case -->
+	<!-- <bean id="dt" class="java.util.Date" /> <bean id="wmg" class="in.aachal.beans.WishMessageGenerator" 
+		/> <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" 
+		/> -->
+
+
+	<!-- Second Case (primary="true") -->
+	<!-- <bean id="dt" class="java.util.Date" primary="true" /> -->
+
+	<!--Matching with property name -->
+	<!-- <bean id="date" class="java.util.Date"> <property name="year" value="110"></property> 
+		</bean> -->
+
 	<bean id="dt" class="java.util.Date" />
-
+	<bean id="dt1" class="java.util.Date" />       <!-- using @Qualifier annotation -->
 	<bean id="wmg" class="in.aachal.beans.WishMessageGenerator" />
-
 	<bean
 		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 
+
+	<context:annotation-config></context:annotation-config>   <!-- Imp for Qualifier Annotation -->
 </beans>
