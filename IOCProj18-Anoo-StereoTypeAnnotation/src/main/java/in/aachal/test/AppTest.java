@@ -13,14 +13,17 @@ public class AppTest {
 		
 		//create IOC container
 		ClassPathXmlApplicationContext ctx=new ClassPathXmlApplicationContext("in/aachal/cfgs/applicationContext.xml");
+		System.out.println("AppTest.main()");
 		
-		WishMessageGenerator generator = ctx.getBean("wmg" ,WishMessageGenerator.class);
+		/*WishMessageGenerator generator = ctx.getBean("wmg" ,WishMessageGenerator.class);
+		WishMessageGenerator generator1 = ctx.getBean("wmg" ,WishMessageGenerator.class);
 		
 		String msg = generator.generateMessage("Aachal");
 		
 		System.out.println(msg);
 		
-		ctx.close();
+		System.out.println(generator==generator1);
+		ctx.close();*/
 	}
 
 }
