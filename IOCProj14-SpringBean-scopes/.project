@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>IOCProj14-SpringBean-scopes</name>
+	<name>IOCProj14-SpringBean-SingletoneScopes</name>
 	<comment></comment>
 	<projects>
 	</projects>
