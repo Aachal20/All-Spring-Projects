@@ -6,8 +6,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
 <!-- Dependent class-->
- <bean id ="dtdc" class="in.aachal.beans.DTDC" /> 
-  <bean id ="dhl" class="in.aachal.beans.DHL" /> 
+ <bean id ="dtdc" class="in.aachal.beans.DTDC"  /> 
+  <bean id ="dhl" class="in.aachal.beans.DHL" scope="prototype" /> 
  
  
 
