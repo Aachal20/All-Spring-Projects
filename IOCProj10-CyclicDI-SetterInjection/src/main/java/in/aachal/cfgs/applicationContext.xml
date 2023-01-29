@@ -12,8 +12,6 @@
 	</bean>
 
 
-	
-
 <!-- TARGET CLASS -->
 	<bean id="a1" class="in.aachal.beans.A">
 		<property name="b" ref="b1"></property>

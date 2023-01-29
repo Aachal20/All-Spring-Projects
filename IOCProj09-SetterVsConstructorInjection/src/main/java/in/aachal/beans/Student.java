@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component("stud")
 public class Student {
- 
+ //optional to participate
 	private String sname;
 	private String collegeName;
 	private int age;

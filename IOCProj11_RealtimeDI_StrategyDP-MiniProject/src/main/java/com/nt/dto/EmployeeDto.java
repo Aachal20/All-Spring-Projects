@@ -8,6 +8,7 @@ public class EmployeeDto implements Serializable {
 	private String ename;
 	private String desg;
 	private Float basicSalary;
+	
 	public void setEno(Integer eno) {
 		this.eno = eno;
 	}

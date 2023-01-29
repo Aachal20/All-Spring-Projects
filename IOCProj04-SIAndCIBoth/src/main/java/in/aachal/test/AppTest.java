@@ -11,8 +11,8 @@ public class AppTest {
 
 	public static void main(String[] args) {
 		//Locate and hold spring bean cfg file
-		//FileSystemResource res=new FileSystemResource("src/main/resources/applicationContext.xml");
-		ClassPathResource res = new ClassPathResource("in/aachal/cfgs/applicationContext.xml");
+		FileSystemResource res=new FileSystemResource("src/main/resources/in/aachal/cfgs/applicationContext.xml");
+		//ClassPathResource res = new ClassPathResource("in/aachal/cfgs/applicationContext.xml");
 		//ClassPathResource res = new ClassPathResource("applicationContext.xml");
 		//create IOC container
 		XmlBeanFactory factory=new XmlBeanFactory(res);
