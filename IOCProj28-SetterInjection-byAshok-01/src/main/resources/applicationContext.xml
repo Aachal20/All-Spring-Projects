@@ -1,0 +1,18 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean id ="ccd" class="in.aachal.beans.CreditCardPayementImpl"/> 
+ <bean id ="debit" class="in.aachal.beans.DebitCardPayementImpl"/> 
+ <bean id ="zeta" class="in.aachal.beans.ZetaCardPayementImpl"/>
+ 
+ 
+ <bean id = "payementCtx" class="in.aachal.beans.PayementContext"> 
+ <property name="paymentService" ref="debit"></property>
+ <constructor-arg ref="ccd"></constructor-arg>
+ 
+ </bean>   
+            
+</beans> -->
